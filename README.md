@@ -1,5 +1,5 @@
 <div align=center>
-    <h1>The NextJS guide</h1>
+    <h1>The NextJS guide (with Typescript!)</h1>
 </div>
 
 ## Know the basics
