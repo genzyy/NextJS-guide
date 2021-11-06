@@ -1,0 +1,73 @@
+export interface GetCharacterResults {
+  info: Info;
+  results: Character[];
+}
+
+export interface Info {
+  count: number;
+  pages: number;
+  next: string;
+  prev: null;
+}
+
+export interface Character {
+  id: number;
+  name: string;
+  status: Status;
+  species: Species;
+  type: string;
+  gender: Gender;
+  origin: Location;
+  location: Location;
+  image: string;
+  episode: string[];
+  url: string;
+  created: Date;
+}
+
+/**
+ * A small note or learning:
+ * Here we see that there are two types of string in typescript
+ * One is 'String' and other is 'string'.
+ * Now the 'String' type (with S in caps) is a javascript string object
+ * whereas string(with small s) is a typescript type.
+ * And 'String' (with S in caps) is a wrapper object and the latter one is
+ * a type.
+ */
+
+export interface Welcome {
+  id: number;
+  name: string;
+  status: Status;
+  species: Species;
+  type: string;
+  gender: Gender;
+  origin: Location;
+  location: Location;
+  image: string;
+  episode: string[];
+  url: string;
+  created: Date;
+}
+
+export enum Gender {
+  Female = 'Female',
+  Male = 'Male',
+  Unknown = 'unknown'
+}
+
+export interface Location {
+  name: string;
+  url: string;
+}
+
+export enum Species {
+  Alien = 'Alien',
+  Human = 'Human'
+}
+
+export enum Status {
+  Alive = 'Alive',
+  Dead = 'Dead',
+  Unknown = 'unknown'
+}
