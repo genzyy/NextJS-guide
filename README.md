@@ -101,4 +101,25 @@
 
 - This section about NextJS is the most important and the most fascinating thing about it.
 
-- Coming Soon...
+- So for fetching data from an API, we can go any of these 3 ways:
+
+  - `getStaticProps`:
+
+    - This is of type Static Generation.
+    - This function gets run whenever we build our NextJS App.
+    - Basically what it does is let's say we are building a webapp to show the details about all the characters from `Rick and Morty` show and for that we only need the data so making a dynamic website is of no use. We only need the data once and show it to the user. So what NextJS does is it fetches the data from the api, stores it and creates different pages for characters.
+    - So it stores the data instead of fetching data for a character if the user visits that character page more than once. This makes navigating to different pages so fast that it feels like app is not even fetching data which is actually what NextJS is doing that is not fetching any data because it already stored it when we built the app.
+    - Read more about this at [https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation).
+
+  - `getStaticPaths`:
+
+    - This is also of type Static Generation.
+    - This is kind of an extended feature of `getStaticProps` and also seperating dynamic routes from statically rendered pages.
+    - In this function we specify which `paths` are need to be statically pre-rendered during the build time.
+    - For example, we have a character pages for RickAndMorty show and a page where we want to show some dynamic details about it. By dynamic we mean the data will change according to the viewing user or maybe the api gives different data per request. So now we can specify that all the character profile pages should be rendered statically at the build time.
+
+  - `getServerSideProps`:
+    - This is of type Server Side Rendering.
+    - This is purely for dynamic paths or pages where we need to show different data on each request or each time the page renders.
+    - In the above defination for getStaticPaths, we talked about a dynamic page rendering different data at each request right? So for these dynamic pages we can use `getServerSideProps`.
+    - What this does is it fetches the data every time that path is visited. So let's say we have a page where we show how much time is left for the next Rick And Morty episode to get released or the latest news we get about Rick And Morty, we use this function to fetch and display the data.
