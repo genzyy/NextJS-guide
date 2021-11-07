@@ -5,8 +5,6 @@
 
 ## Creating NextJS project with typescript
 
-<hr />
-
 - There are two ways to create a nextJS project, one in which we use a template where everything is setup and is in sync with each other and is the recommended one for beginners and the other one is to set up everything from scratch and manually.
 
 - Using `npx` and with NextJS template,
@@ -33,7 +31,6 @@
 
 ## Know the basics
 
-<hr />
 <br />
 
 | Differences                            |                                        ReactJS                                        |                                                NextJS                                                |
@@ -46,9 +43,8 @@
 
 <br />
 
-### Typescript: Basics
+## Typescript: Basics
 
-<hr />
 <br />
 
 - For people who have used `C++` and `Python`, comparing `Javascript` and `Typescript` is very similar in terms of generics and literals. In javascript, we don't have to specify the variable type and generics. But in typescript, we can specify the types and generics of the variable, what the function returns and what the function type is.
@@ -73,7 +69,6 @@
 
 ## NextJS
 
-<hr />
 <br />
 
 #### Getting Started
