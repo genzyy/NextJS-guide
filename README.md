@@ -1,8 +1,11 @@
 <div align=center>
     <h1>The NextJS guide (with Typescript!)</h1>
 </div>
+<br />
 
 ## Creating NextJS project with typescript
+
+<hr />
 
 - There are two ways to create a nextJS project, one in which we use a template where everything is setup and is in sync with each other and is the recommended one for beginners and the other one is to set up everything from scratch and manually.
 
@@ -11,8 +14,10 @@
 ```bash
     yarn create next-app <project-name> --typescript
     # or
-    npx create next-app <project-name> --typescrip
+    npx create next-app <project-name> --typescript
 ```
+
+<br />
 
 - To setup everything by yourself,
 
@@ -24,7 +29,12 @@
 
 - note: here I need to add more details, I'll do it soon.
 
+<br />
+
 ## Know the basics
+
+<hr />
+<br />
 
 | Differences                            |                                        ReactJS                                        |                                                NextJS                                                |
 | :------------------------------------- | :-----------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: |
@@ -34,7 +44,12 @@
 | Routing                                |          For routing one uses the best package which is `react-router-dom`.           |                                   It has built-in routing system.                                    |
 | Extending features and adding new ones | It is very easy to add more features, loaders, components, etc but with npm packages. | There are basic and common tools provided by the next package but can be extended with npm packages. |
 
+<br />
+
 ### Typescript: Basics
+
+<hr />
+<br />
 
 - For people who have used `C++` and `Python`, comparing `Javascript` and `Typescript` is very similar in terms of generics and literals. In javascript, we don't have to specify the variable type and generics. But in typescript, we can specify the types and generics of the variable, what the function returns and what the function type is.
 
@@ -54,9 +69,16 @@
 
 - If you want to learn more about typescript, visit [typescript docs](https://www.typescriptlang.org/docs/).
 
+<br />
+
 ## NextJS
 
+<hr />
+<br />
+
 #### Getting Started
+
+<hr />
 
 - The NextJS frameworks combines routing, react library, image optimization, secure api calls and a faster page rendering.
 
@@ -64,10 +86,22 @@
 
 - Since NextJS is from vercel, deploying our production build to vercel is much easier and takes few clicks to make our website available on the web.
 
+<br />
+
 #### Next Components (or NextJS API)
+
+<hr />
 
 - NextJS provides some of the common components that a react developer requires to build a website. For example, we need head component to change the `meta` details or changing the title of the page where each of them have a different title.
 
 - It also provides the image component where you can give the `width` and `height` properties to the image without defining custom inline css styles for the component. Using `next/image` (NextJS image component), it also makes the api calls for image urls more secure by defining all the domains which are whitelisted to get the images from. So let's say I whitelisted only [cloudinary](https://cloudinary.com/), then I cannot render an image from a url which has a different domain than cloudinary.
 
-- Read more at [https://nextjs.org/docs/api-reference/cli](https://nextjs.org/docs/api-reference/cli).
+- I'll be honest and say that the documentation that NextJS provides on their components/api is the best and rather than writing small points about those I'll suggest to read the official documentation at [https://nextjs.org/docs/api-reference/cli](https://nextjs.org/docs/api-reference/cli).
+
+<br />
+
+#### Data Fetching
+
+<hr />
+
+- This section about NextJS is the most important and the most fascinating thing about it.
