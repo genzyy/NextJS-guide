@@ -100,3 +100,5 @@
 <hr />
 
 - This section about NextJS is the most important and the most fascinating thing about it.
+
+- Coming Soon...
