@@ -8,6 +8,10 @@
 - Typescript is a language similar to javascript but is more strict and tells the developer or debugger everything about the code.
 - It has better type definations, generics and other rules when defining certain blocks of code.
 
+- For people who have used `C++` and `Python`, comparing `Javascript` and `Typescript` is very similar in terms of generics and literals. In javascript, we don't have to specify the variable type and generics. But in typescript, we can specify the types and generics of the variable, what the function returns and what the function type is.
+
+- In a nutshell, while using javascript you can create your ways and the maze and figure your way out and while using typescript you already know what the way out is you just have to know the right direction.
+
 ## Defining variables
 
 - When defining variables in typescript, we also define the type of value which it holds. For example in JS, we only write,
@@ -114,5 +118,6 @@ const person1: User = createPerson('genzyy', 0);
 ```
 
 - The above code in json is an example of a typescript configuration for `NextJS` project.
+- I'll suggest to visit [this](https://github.com/benawad/tsconfig.json) repository and have a look at all [types](https://github.com/benawad/tsconfig.json/tree/master/src/config) of tsconfigs for different use cases.
 
-- Read more about the rules at [https://www.typescriptlang.org/docs/handbook/tsconfig-json.html](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+- Also you can read more about the rules at [https://www.typescriptlang.org/docs/handbook/tsconfig-json.html](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).

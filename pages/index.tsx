@@ -42,8 +42,8 @@ const Home: NextPage<{ characters: Character[] }> = ({ characters }) => {
 
 export const getStaticProps: GetStaticProps = async context => {
   // runs when the app is building.
-  const apiURL = 'https://rickandmortyapi.com/api/character';
-  const response = await fetch(apiURL);
+  const apiURL: string = 'https://rickandmortyapi.com/api/character';
+  const response: any = await fetch(apiURL);
   const { results }: GetCharacterResults = await response.json();
 
   return {

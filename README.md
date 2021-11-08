@@ -47,23 +47,7 @@
 
 <br />
 
-- For people who have used `C++` and `Python`, comparing `Javascript` and `Typescript` is very similar in terms of generics and literals. In javascript, we don't have to specify the variable type and generics. But in typescript, we can specify the types and generics of the variable, what the function returns and what the function type is.
-
-- In a nutshell, while using javascript you can create your ways and the maze and figure your way out and while using typescript you already know what the way out is you just have to know the right direction.
-
-- Also while working on a typescript project, we can also define `types` and `interfaces`.Now what are these interface and types? You see when we are in a typescript environment every object, variable, function, etc. has some pre defined structure which every part of the code follows or a contract that they must follow.
-
-- For example, we have an object as `person`. This `person` object will have attributes as `name`, `age`, and `address`. Now when we use this object to get data about a specific person the project environment (typescript env) knows the structure of this person object and only allows the data to be retrieved from the object which are defined for it. So if we try to get `hobbies` attribute from `person` object we can't, because its not in the interface that we defined for the object.
-
-- Not only objects and variables but everything has a predefined type or a structure in the typescript evnvironment. Even the `react hooks` and `custom components` that we create while working on a react project has a type to it.
-
-- Now you might think that since everything needs to have an interface, do we manually have to defined them? No. While working with react library or with the next framework, a lot of these have a predefined types but we only need to specify them so that the env knows what type of value does the variable hold or what type of data a function returns.
-
-- But for the data that we manually create or get from an `API`, we do need to define their interface.
-
-- In a typescript project, we also define some rules for the TS env using `tsconfig.json`. There are many rules that we can define for our project. I'll suggest to visit [this](https://github.com/benawad/tsconfig.json) repository and have a look at all [types](https://github.com/benawad/tsconfig.json/tree/master/src/config) of tsconfigs for different use cases.
-
-- If you want to learn more about typescript, visit [typescript docs](https://www.typescriptlang.org/docs/).
+- Read the typescript basics [here](https://github.com/genzyy/NextJS-guide/tree/main/typescript).
 
 <br />
 
