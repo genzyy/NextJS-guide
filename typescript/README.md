@@ -10,7 +10,7 @@
 
 - For people who have used `C++` and `Python`, comparing `Javascript` and `Typescript` is very similar in terms of generics and literals. In javascript, we don't have to specify the variable type and generics. But in typescript, we can specify the types and generics of the variable, what the function returns and what the function type is.
 
-- In a nutshell, while using javascript you can create your ways and the maze and figure your way out and while using typescript you already know what the way out is you just have to know the right direction.
+- In a nutshell, while using javascript you can create your ways in a maze and figure your way out and while using typescript you already know the way out, you just have to know the right direction.
 
 ## Defining variables
 
