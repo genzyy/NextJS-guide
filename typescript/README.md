@@ -76,3 +76,43 @@ const person1: User = createPerson('genzyy', 0);
 ```
 
 - These interface types are defined in `types.ts` file located in the root directory of the project. Also to use these in your projects and make them available globally in the project folder, we export all the interfaces.
+
+## `tsconfig.json`
+
+- While working on a project where typescript is being used, we define some rules for the environment. For example whether to compile the code to `ES5` or `ES6`, can the developer use javascript inside typescript files, etc.
+
+- So to define these rules we create `tsconfig.json` file in the home directory of the project.
+
+- It can also be said that this is the configuration for the typescript compiler.
+
+```json
+{
+  "compilerOptions": {
+    // target for build files.
+    "target": "es5",
+    // libraries to use.
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    // resolve modules using node.
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  // include these directories.
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  // exclude these directories.
+  "exclude": ["node_modules"]
+}
+```
+
+- The above code in json is an example of a typescript configuration for `NextJS` project.
+
+- Read more about the rules at [https://www.typescriptlang.org/docs/handbook/tsconfig-json.html](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
