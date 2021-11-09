@@ -118,3 +118,5 @@ Note: You can also use `prettier` or don't use linters at all.
 - That's it! You can now work on your project with NextJS and Typescript
 
 - For component files, create `.tsx` files and for typescript types, create `.ts` files.
+
+- You can view this projects files [here](https://github.com/genzyy/NextJS-guide/tree/main/NextJS-without-CRA/testing-custom-nextjs).
