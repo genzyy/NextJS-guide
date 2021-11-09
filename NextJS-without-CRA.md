@@ -79,3 +79,42 @@ const Home: NextPage = () => {
   );
 };
 ```
+
+- Here the Home component is of type NextPage which tells NextJS that it can be compiled to a next page.
+
+- Now in order to run the app or build, we have to add some scripts in `package.json`. Add the just above the `dependencies` section,
+
+```json
+"scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+```
+
+- After all this, we can now compile and run the development server by running the command
+
+```bash
+  npm run dev
+  # or
+  yarn run dev
+```
+
+- The website is hosted at `localhost:3000`.
+
+- Now for linting and syntax rules, we will use `eslint`.
+
+Note: You can also use `prettier` or don't use linters at all.
+
+- Create `.eslintrc.json` file in the root project folder and add the following,
+
+```json
+{
+  "extends": "next/core-web-vitals"
+}
+```
+
+- That's it! You can now work on your project with NextJS and Typescript
+
+- For component files, create `.tsx` files and for typescript types, create `.ts` files.
