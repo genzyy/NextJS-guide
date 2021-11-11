@@ -17,15 +17,7 @@
 
 <br />
 
-- To setup everything by yourself,
-
-```bash
-    npm install next react react-dom
-    # or
-    yarn add next react react-domain
-```
-
-- note: here I need to add more details, I'll do it soon.
+- To setup everything by yourself, visit [NextJS without CRA](https://github.com/genzyy/NextJS-guide/blob/main/NextJS-without-CRA.md).
 
 <br />
 
@@ -35,7 +27,7 @@
 
 | Differences                            |                                        ReactJS                                        |                                                NextJS                                                |
 | :------------------------------------- | :-----------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: |
-| Type                                   |                                  This is a `Library`                                  |                                        This is a `framework`                                         |
+| Type                                   |                                 This is a `Library`.                                  |                                        This is a `framework`.                                        |
 | What it does?                          |       ReactJS does one thing and does it best which is to build UI components.        |          Its a collection of tools to give you a complete pack to build a full fledged app.          |
 | Uses                                   |                Can be used to build any type of webpages (almost all).                |          Better for small and `static` webapps but are also very good for dynamic webapps.           |
 | Routing                                |          For routing one uses the best package which is `react-router-dom`.           |                                   It has built-in routing system.                                    |
