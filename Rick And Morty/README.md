@@ -111,3 +111,37 @@ export const getStaticProps: GetStaticProps = async context => {
   };
 };
 ```
+
+- Now see that here we have used a custom types, `GetCharacterResults`. We will also use a `character` type to create an object for different characters from Rick And Morty.
+
+- We can create typescript types with the given JSON data without actually knowing what the data is. What I mean is creating different object types is a lot of work when you have a large data or when the data is nested and complex. To automate this process, we can go to [https://quicktype.io/typescript](https://quicktype.io/typescript), and paste your JSON data there. This will create the types required to save the data.
+
+- First use any app like [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/) or even [cURL](https://curl.se/) to get the json data from the api [https://rickandmortyapi.com/api/character](https://rickandmortyapi.com/api/character). Then copy the data and go to [https://quicktype.io/typescript](https://quicktype.io/typescript) and select typescript on right box. Now paste the json data we got before in the left input box and on top left there will an input field for the naming the data, name the data as `Info`.
+
+- Then we will copy the generated types to `types.ts` that we have to create in project root folder.
+
+- We also need to create our own types for characters and to assign the retrieved data from the api.
+
+```typescript
+export interface GetCharacterResults {
+  info: Info;
+  results: Character[];
+}
+
+export interface Character {
+  id: number;
+  name: string;
+  status: Status;
+  species: Species;
+  type: string;
+  gender: Gender;
+  origin: Location;
+  location: Location;
+  image: string;
+  episode: string[];
+  url: string;
+  created: Date;
+}
+```
+
+- `NOTE`: Here we see that there are two types of string in typescript one is 'String' and other is 'string'. Now the 'String' type (with S in caps) is a javascript string object whereas string(with small s) is a typescript type. And 'String' (with S in caps) is a wrapper object and the latter one is a type.
