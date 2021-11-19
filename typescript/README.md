@@ -81,6 +81,62 @@ const person1: User = createPerson('genzyy', 0);
 
 - These interface types are defined in `types.ts` file located in the root directory of the project. Also to use these in your projects and make them available globally in the project folder, we export all the interfaces.
 
+- We can also declare functions which are then defined in the class, or the component which follows the interface in the project directory. To add function declarations in typescript interface, see this example
+
+```typescript
+interface User {
+  name: string;
+  age: number;
+  giveName(): string;
+}
+```
+
+- We declare a function in interface, by giving the function a name and stating its return type. And then whatever class or component implements this interface, needs to define the function (if its a class) or pass it as an argument (if its a component).
+
+`NOTE: Don't worry about the interface and its use in React Typescript. I will be creating a tutorial on this.`
+
+- Lets look at the example of how a class in typescript implements the interface:
+
+```typescript
+interface User {
+  name: string;
+  age: number;
+  giveName(): string;
+}
+
+class UserDetails implements User {
+  public name: string = 'Rishit';
+  public age: number = 21;
+
+  public giveName(): string {
+    return this.name;
+  }
+}
+```
+
+- Don't feel left alone if you don't know some keywords or any of them. We will cover all of this soon.
+
+- And now this is an example of use of interfaces in react,
+
+```typescript
+import React, { useState } from 'react';
+
+interface Props {
+  children: (data: {
+    count: number;
+    setCount: React.Dispatch<React.SetStateAction<number>>;
+  }) => JSX.Element | null;
+}
+
+export const Counter: React.FC<Props> = ({ children }) => {
+  const [count, setCount] = useState(0);
+
+  return <div>{children({ count, setCount })}</div>;
+};
+```
+
+- In the above code example, the interfaces are being used as to structure the props or to tell the parent component what details are exactly need to be passed to the child component. Also here we also define the return type of variables and functions that are being passed to the component as props. So this helps in type checking and if the correct data is being passsed or not.
+
 ## `tsconfig.json`
 
 - While working on a project where typescript is being used, we define some rules for the environment. For example whether to compile the code to `ES5` or `ES6`, can the developer use javascript inside typescript files, etc.
