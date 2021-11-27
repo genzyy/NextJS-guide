@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align=center>
+    <h1>NextJS: Rick and Morty GraphQL API tutorial</h1>
+</div>
 
-## Getting Started
+## What we have done so far?
 
-First, run the development server:
+- We have learnt about the differences between `NextJS` and `React` and we know about the functions provided by the `NextJS` for fetching data from an api url.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- We know how to define some types for the given data and to import types from given packages.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Now we will see how to use graphql api from rick and morty api and how to fetch data, and how to de-structure it.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## What is GraphQL?
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- coming soon...
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## GraphQL Destructuring
 
-## Learn More
+- coming soon...
 
-To learn more about Next.js, take a look at the following resources:
+## Apollo Client and GraphQL
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- coming soon...
